@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- Grid -->
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Responsive -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo_l">
+        <img src="./assets/img/logo.png" alt="Logo">
+        <div class="logo_name">mp3</div>
+      </div>
+      <div class="logo_m">
+        <img src="./assets/img/logo_m.png" alt="">
+      </div>
+    </div>
+    <ul class="nav__menu">
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-user-circle'></i>
+          <span class="links_name">Cá nhân</span>
+        </a>
+        <span class="tooltip">Cá nhân</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-bolt-circle'></i>
+          <span class="links_name">Khám phá</span>
+        </a>
+        <span class="tooltip">Khám phá</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-pie-chart-alt'></i>
+          <span class="links_name">#zingchart</span>
+        </a>
+        <span class="tooltip">#zingchart</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-podcast'></i>
+          <span class="links_name">Radio & Podcast</span>
+        </a>
+        <span class="tooltip">Radio & Podcast</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-file'></i>
+          <span class="links_name">Theo dõi</span>
+        </a>
+        <span class="tooltip">Theo dõi</span>
+      </li>
+      <hr>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-music'></i>
+          <span class="links_name">Nhạc mới</span>
+        </a>
+        <span class="tooltip">Nhạc mới</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-category-alt'></i>
+          <span class="links_name">Thể loại</span>
+        </a>
+        <span class="tooltip">Thể loại</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bx-star'></i>
+          <span class="links_name">Top 100</span>
+        </a>
+        <span class="tooltip">Top 100</span>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <i class='bx bxl-youtube'></i>
+          <span class="links_name">MV</span>
+        </a>
+        <span class="tooltip">MV</span>
+      </li>
+    </ul>
+    <div class="sidebar_toggle">
+      <i class='bx bx-chevron-right'></i>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main_header">
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <i class='bx bx-search'></i>
+          <input type="text" name="" id="" placeholder="Nhập tên bài hát...">
+          <!-- <span class="tooltip">Search</span> -->
+        </li>
+        <div class="nav__container">
+          <li class="nav__item">
+            <i class='bx bxs-t-shirt' style="color: #FA8072"></i>
+          </li>
+          <li class="nav__item">
+            <i class='bx bx-upload'></i>
+          </li>
+          <li class="nav__item">
+            <i class='bx bx-cog'></i>
+          </li>
+          <li class="nav__item">
+            <img src="./assets/img/avatar.jpg" alt="">
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="main_content mb-30">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col c-10 m-11 l-11">
+            <h3 class="content_title">Nghe gần đây</h3>
+          </div>
+          <div class="col c-2 m-1 l-1 swiper">
+            <div class="swiper-button-next" id="js-next-first"></div>
+            <div class="swiper-button-prev" id="js-prev-first"></div>
+          </div>
+        </div>
+        <div class="row sm-gutter swiper" id="js-swiper-first">
+          <div class="swiper-wrapper">
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/nhackhongloi.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>nhạc không lời giúp tập trung làm việc</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/nhacphim.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>nhạc phim yêu em từ cái nhìn đầu tiên</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/zingchart.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>#ZINGCHART</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/rap.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>rap việt hay nhất về nỗi buồn</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/pop.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 pop âu mỹ hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/voTuyetVoiNhat.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>vợ tuyệt vời nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/mix.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>100% gây nghiện</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/korea.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 nhạc hàn quốc hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/hanoi.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>những bài hát hay về hà nội</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col c-10 m-11 l-11">
+            <h3 class="content_title">Có thể bạn muốn nghe</h3>
+          </div>
+          <div class="col c-2 m-1 l-1 swiper">
+            <div class="swiper-button-next" id="js-next-second"></div>
+            <div class="swiper-button-prev" id="js-prev-second"></div>
+          </div>
+        </div>
+        <div class="row sm-gutter swiper" id="js-swiper-second">
+          <div class="swiper-wrapper">
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/edm.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 nhạc electronic/dance âu mỹ</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/edmViet.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>Top 100 nhạc edm việt hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/nhacTre.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 bài hát nhạc trẻ hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/nhacTruTinh.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 nhạc trữ tình hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/pop.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 pop âu mỹ hay nhất</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/korea.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>top 100 nhạc hàn quốc hay nhất</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col c-12 m-12 l-12">
+            <h3>Càng nghe càng mê</h3>
+          </div>
+        </div>
+        <div class="row sm-gutter swiper">
+          <div class="swiper-wrapper">
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/playListChill.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>playlist này chill phết</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/kpopperfect.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>K-Pop Perfect All-Kill</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/wazzup.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>Wazzup: Viral Hits</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/tiemnangvpop.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>Tiềm Năng V-Pop</p>
+            </div>
+            <div class="col c-6 m-3 l-2-4 swiper-slide">
+              <div class="swiper-slide-img">
+                <a href="#">
+                  <img src="./assets/img/popAllStar.jpg" alt="">
+                </a>
+                <div class="swiper-remote">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bx-play-circle'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                  </a>
+                </div>
+              </div>
+              <p>Pop All Stars</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-sub">
+    <div class="sidebar-header">
+      <div class="sidebar-control">
+        <div class="control-left" id="control-left">
+          <div class="control-item">
+            <h3>Danh sách phát</h3>
+          </div>
+          <div class="control-item">
+            <h3>Nghe gần đây</h3>
+          </div>
+        </div>
+        <div class="control-right">
+          <div class="control-item">
+            <span>
+              <i class='bx bx-alarm'></i>
+            </span>
+          </div>
+          <div class="control-item">
+            <span>
+              <i class='bx bx-dots-horizontal-rounded'></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-scroll">
+
+    </div>
+  </div>
+  <div class="player">
+    <div class="grid">
+      <div class="row">
+        <div class="col l-3 m-4 c-4" id="player-song">
+          <div class="media-item">
+            <div class="media-left">
+              <div class="song-thumb">
+                <img src="" alt="">
+              </div>
+              <div class="song-infor">
+                <span class="song-name"></span>
+                <span class="song-author"></span>
+              </div>
+            </div>
+            <div class="media-right">
+              <div class="control-item">
+                <span>
+                  <i class='bx bx-heart'></i>
+                </span>
+              </div>
+              <div class="control-item">
+                <span>
+                  <i class='bx bx-dots-horizontal-rounded'></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l-6 m-5 c-5 control-btn">
+          <div class="control">
+            <div class="btn btn-random">
+              <i class='bx bx-shuffle'></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class='bx bx-skip-previous'></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class='bx bx-play'></i>
+              <i class='bx bx-pause'></i>
+            </div>
+            <div class="btn btn-next">
+              <i class='bx bx-skip-next'></i>
+            </div>
+            <div class="btn btn-repeat">
+              <i class='bx bx-revision'></i>
+            </div>
+          </div>
+          <div class="control-progress">
+            <span class="time-start">00:00</span>
+            <input type="range" name="" id="progress-song" class="progress-song" value="0" step="1" min="0" max="100">
+            <span class="time-end">03:12</span>
+          </div>
+          <audio src="" id="audio"></audio>
+        </div>
+        <div class="col l-3 m-3 c-3">
+          <div class="media-item">
+            <div class="media-right">
+              <div class="control-item">
+                <span>
+                  <i class='bx bxl-youtube'></i>
+                </span>
+              </div>
+              <div class="control-item">
+                <span>
+                  <i class='bx bx-microphone'></i>
+                </span>
+              </div>
+              <div class="control-item">
+                <span id="btn-volume">
+                  <i class='bx bx-volume-full' id="volume-full"></i>
+                </span>
+                <div class="volume-container">
+                  <input type="range" name="" id="progress-volume" class="progress-volume" value="100" step="1" min="0"
+                  max="100">
+                </div>
+              </div>
+              <div class="control-item">
+                <span>
+                  <i class='bx bxs-playlist'></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- Main -->
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
